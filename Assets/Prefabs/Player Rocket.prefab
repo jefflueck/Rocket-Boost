@@ -1,0 +1,226 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2515375553662250465
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2284427733931650396}
+  m_Layer: 0
+  m_Name: Player Rocket
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2284427733931650396
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2515375553662250465}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -9.395082, y: 2.0381515, z: -0.34998554}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6905415211742985050}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &528562835562056932
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2284427733931650396}
+    m_Modifications:
+    - target: {fileID: 3885588862396152180, guid: cf91000b018c5e64d87fba48f5ab81b9, type: 3}
+      propertyPath: thrustStrength
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 3885588862396152180, guid: cf91000b018c5e64d87fba48f5ab81b9, type: 3}
+      propertyPath: thrust.m_SingletonActionBindings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3885588862396152180, guid: cf91000b018c5e64d87fba48f5ab81b9, type: 3}
+      propertyPath: rotation.m_SingletonActionBindings.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3885588862396152180, guid: cf91000b018c5e64d87fba48f5ab81b9, type: 3}
+      propertyPath: thrust.m_SingletonActionBindings.Array.data[0].m_Id
+      value: 067ead0a-af2a-4664-9d22-575360f4c4a1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3885588862396152180, guid: cf91000b018c5e64d87fba48f5ab81b9, type: 3}
+      propertyPath: rotation.m_SingletonActionBindings.Array.data[0].m_Id
+      value: 26106ccc-22be-4afb-9cec-ebbefa96883c
+      objectReference: {fileID: 0}
+    - target: {fileID: 3885588862396152180, guid: cf91000b018c5e64d87fba48f5ab81b9, type: 3}
+      propertyPath: rotation.m_SingletonActionBindings.Array.data[1].m_Id
+      value: 60b29f01-4853-4361-8ef3-636e1d31a56a
+      objectReference: {fileID: 0}
+    - target: {fileID: 3885588862396152180, guid: cf91000b018c5e64d87fba48f5ab81b9, type: 3}
+      propertyPath: rotation.m_SingletonActionBindings.Array.data[2].m_Id
+      value: a699910c-8f89-4e7c-8336-c286f0aeb94f
+      objectReference: {fileID: 0}
+    - target: {fileID: 3885588862396152180, guid: cf91000b018c5e64d87fba48f5ab81b9, type: 3}
+      propertyPath: thrust.m_SingletonActionBindings.Array.data[0].m_Path
+      value: <Keyboard>/space
+      objectReference: {fileID: 0}
+    - target: {fileID: 3885588862396152180, guid: cf91000b018c5e64d87fba48f5ab81b9, type: 3}
+      propertyPath: rotation.m_SingletonActionBindings.Array.data[0].m_Name
+      value: keyboard
+      objectReference: {fileID: 0}
+    - target: {fileID: 3885588862396152180, guid: cf91000b018c5e64d87fba48f5ab81b9, type: 3}
+      propertyPath: rotation.m_SingletonActionBindings.Array.data[0].m_Path
+      value: 1DAxis
+      objectReference: {fileID: 0}
+    - target: {fileID: 3885588862396152180, guid: cf91000b018c5e64d87fba48f5ab81b9, type: 3}
+      propertyPath: rotation.m_SingletonActionBindings.Array.data[1].m_Name
+      value: negative
+      objectReference: {fileID: 0}
+    - target: {fileID: 3885588862396152180, guid: cf91000b018c5e64d87fba48f5ab81b9, type: 3}
+      propertyPath: rotation.m_SingletonActionBindings.Array.data[1].m_Path
+      value: <Keyboard>/leftArrow
+      objectReference: {fileID: 0}
+    - target: {fileID: 3885588862396152180, guid: cf91000b018c5e64d87fba48f5ab81b9, type: 3}
+      propertyPath: rotation.m_SingletonActionBindings.Array.data[2].m_Name
+      value: positive
+      objectReference: {fileID: 0}
+    - target: {fileID: 3885588862396152180, guid: cf91000b018c5e64d87fba48f5ab81b9, type: 3}
+      propertyPath: rotation.m_SingletonActionBindings.Array.data[2].m_Path
+      value: <Keyboard>/rightArrow
+      objectReference: {fileID: 0}
+    - target: {fileID: 3885588862396152180, guid: cf91000b018c5e64d87fba48f5ab81b9, type: 3}
+      propertyPath: thrust.m_SingletonActionBindings.Array.data[0].m_Action
+      value: Thrust
+      objectReference: {fileID: 0}
+    - target: {fileID: 3885588862396152180, guid: cf91000b018c5e64d87fba48f5ab81b9, type: 3}
+      propertyPath: rotation.m_SingletonActionBindings.Array.data[0].m_Flags
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3885588862396152180, guid: cf91000b018c5e64d87fba48f5ab81b9, type: 3}
+      propertyPath: rotation.m_SingletonActionBindings.Array.data[1].m_Flags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3885588862396152180, guid: cf91000b018c5e64d87fba48f5ab81b9, type: 3}
+      propertyPath: rotation.m_SingletonActionBindings.Array.data[2].m_Flags
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3885588862396152180, guid: cf91000b018c5e64d87fba48f5ab81b9, type: 3}
+      propertyPath: rotation.m_SingletonActionBindings.Array.data[0].m_Action
+      value: Rotation
+      objectReference: {fileID: 0}
+    - target: {fileID: 3885588862396152180, guid: cf91000b018c5e64d87fba48f5ab81b9, type: 3}
+      propertyPath: rotation.m_SingletonActionBindings.Array.data[1].m_Action
+      value: Rotation
+      objectReference: {fileID: 0}
+    - target: {fileID: 3885588862396152180, guid: cf91000b018c5e64d87fba48f5ab81b9, type: 3}
+      propertyPath: rotation.m_SingletonActionBindings.Array.data[2].m_Action
+      value: Rotation
+      objectReference: {fileID: 0}
+    - target: {fileID: 6377417671358724030, guid: cf91000b018c5e64d87fba48f5ab81b9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.19491768
+      objectReference: {fileID: 0}
+    - target: {fileID: 6377417671358724030, guid: cf91000b018c5e64d87fba48f5ab81b9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.57815146
+      objectReference: {fileID: 0}
+    - target: {fileID: 6377417671358724030, guid: cf91000b018c5e64d87fba48f5ab81b9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6377417671358724030, guid: cf91000b018c5e64d87fba48f5ab81b9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6377417671358724030, guid: cf91000b018c5e64d87fba48f5ab81b9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6377417671358724030, guid: cf91000b018c5e64d87fba48f5ab81b9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6377417671358724030, guid: cf91000b018c5e64d87fba48f5ab81b9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6377417671358724030, guid: cf91000b018c5e64d87fba48f5ab81b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6377417671358724030, guid: cf91000b018c5e64d87fba48f5ab81b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6377417671358724030, guid: cf91000b018c5e64d87fba48f5ab81b9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8182584667319594158, guid: cf91000b018c5e64d87fba48f5ab81b9, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8182584667319594158, guid: cf91000b018c5e64d87fba48f5ab81b9, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311465846374113457, guid: cf91000b018c5e64d87fba48f5ab81b9, type: 3}
+      propertyPath: m_Constraints
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 8311465846374113457, guid: cf91000b018c5e64d87fba48f5ab81b9, type: 3}
+      propertyPath: m_ImplicitCom
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8902305362784705133, guid: cf91000b018c5e64d87fba48f5ab81b9, type: 3}
+      propertyPath: m_Name
+      value: Rick's Weird Space Pod
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 8182584667319594158, guid: cf91000b018c5e64d87fba48f5ab81b9, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8902305362784705133, guid: cf91000b018c5e64d87fba48f5ab81b9, type: 3}
+      insertIndex: 2
+      addedObject: {fileID: 3765563648832981361}
+  m_SourcePrefab: {fileID: 100100000, guid: cf91000b018c5e64d87fba48f5ab81b9, type: 3}
+--- !u!4 &6905415211742985050 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6377417671358724030, guid: cf91000b018c5e64d87fba48f5ab81b9, type: 3}
+  m_PrefabInstance: {fileID: 528562835562056932}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8997772689140618889 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8902305362784705133, guid: cf91000b018c5e64d87fba48f5ab81b9, type: 3}
+  m_PrefabInstance: {fileID: 528562835562056932}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &3765563648832981361
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8997772689140618889}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.6162748, y: 2.0353174, z: 1}
+  m_Center: {x: 0.102440044, y: 1.0403483, z: 0}

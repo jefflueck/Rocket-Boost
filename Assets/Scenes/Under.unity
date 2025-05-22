@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 3a340fbd9683844b2a52e2c6ad8fa4fa, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -171,6 +171,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Landing Pad
       objectReference: {fileID: 0}
+    - target: {fileID: 7779531455321292728, guid: ad3345aac4a0d48ee875d2033d7d6cb4, type: 3}
+      propertyPath: m_TagString
+      value: Finish
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -264,7 +268,7 @@ Transform:
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
   m_LocalRotation: {x: 0.082480535, y: 0, z: 0, w: 0.9965927}
-  m_LocalPosition: {x: -9.59, y: 3.46, z: -12.4499855}
+  m_LocalPosition: {x: -9.59, y: 3.46, z: -12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -653,7 +657,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
+  - {fileID: 2100000, guid: 86ef476602b634d309c18dfb1fa53424, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -763,7 +767,7 @@ Transform:
   m_GameObject: {fileID: 2040732423}
   serializedVersion: 2
   m_LocalRotation: {x: 0.082480535, y: 0, z: 0, w: 0.9965927}
-  m_LocalPosition: {x: -9.59, y: 3.46, z: -12.4499855}
+  m_LocalPosition: {x: -9.59, y: 3.46, z: -12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -788,7 +792,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2284427733931650396, guid: 991b42b3a334e40408e4d3733e698a8e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.34998554
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2284427733931650396, guid: 991b42b3a334e40408e4d3733e698a8e, type: 3}
       propertyPath: m_LocalRotation.w
@@ -827,6 +831,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 991b42b3a334e40408e4d3733e698a8e, type: 3}
+--- !u!1001 &8317960394684744054
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7111362933404656332, guid: 43656b73a833e4cae88d55e1d4f7b7ae, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.48986
+      objectReference: {fileID: 0}
+    - target: {fileID: 7111362933404656332, guid: 43656b73a833e4cae88d55e1d4f7b7ae, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 12.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7111362933404656332, guid: 43656b73a833e4cae88d55e1d4f7b7ae, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.2936
+      objectReference: {fileID: 0}
+    - target: {fileID: 7111362933404656332, guid: 43656b73a833e4cae88d55e1d4f7b7ae, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7111362933404656332, guid: 43656b73a833e4cae88d55e1d4f7b7ae, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7111362933404656332, guid: 43656b73a833e4cae88d55e1d4f7b7ae, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7111362933404656332, guid: 43656b73a833e4cae88d55e1d4f7b7ae, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7111362933404656332, guid: 43656b73a833e4cae88d55e1d4f7b7ae, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7111362933404656332, guid: 43656b73a833e4cae88d55e1d4f7b7ae, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 7111362933404656332, guid: 43656b73a833e4cae88d55e1d4f7b7ae, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7636823236244060278, guid: 43656b73a833e4cae88d55e1d4f7b7ae, type: 3}
+      propertyPath: m_Name
+      value: Dropship_01_Tank_Red
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 43656b73a833e4cae88d55e1d4f7b7ae, type: 3}
 --- !u!1001 &9067824949161735924
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -879,6 +940,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Launch Pad
       objectReference: {fileID: 0}
+    - target: {fileID: 7779531455321292728, guid: ad3345aac4a0d48ee875d2033d7d6cb4, type: 3}
+      propertyPath: m_TagString
+      value: Friendly
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -895,4 +960,5 @@ SceneRoots:
   - {fileID: 1486551124}
   - {fileID: 9067824949161735924}
   - {fileID: 139884815}
+  - {fileID: 8317960394684744054}
   - {fileID: 3017631917223014366}

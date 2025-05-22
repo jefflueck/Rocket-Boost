@@ -4,6 +4,7 @@ using UnityEngine.InputSystem;
 
 public class Movement : MonoBehaviour
 {
+
     [SerializeField]
     InputAction thrust;
     [SerializeField]
@@ -15,12 +16,20 @@ public class Movement : MonoBehaviour
     [SerializeField]
     private float rotationStrength = 100f;
 
+    [SerializeField]
+    private AudioClip mainEngine;
+
     // Another convention is to call the variable "rb" for "rigidbody"
     private Rigidbody rb;
+    AudioSource audioSource;
+
+    [SerializeField]
+    ParticleSystem thrustParticles;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void OnEnable()
@@ -42,8 +51,16 @@ public class Movement : MonoBehaviour
 
             // Add a force to the rigidbody in the upward direction
             rb.AddRelativeForce(Vector3.up * thrustStrength * Time.fixedDeltaTime);
-
-
+            if (!audioSource.isPlaying)
+            {
+                audioSource.PlayOneShot(mainEngine);
+                thrustParticles.Play();
+            }
+        }
+        else
+        {
+            audioSource.Stop();
+            thrustParticles.Stop();
         }
     }
 
@@ -67,6 +84,8 @@ public class Movement : MonoBehaviour
 
     private void ApplyRotation(float rotationThisFrame)
     {
+        rb.freezeRotation = true; // Freeze rotation so we can manually rotate
         transform.Rotate(Vector3.forward * rotationThisFrame * Time.fixedDeltaTime);
+        rb.freezeRotation = false; // Unfreeze rotation so physics can take over
     }
 }

@@ -17,14 +17,20 @@ public class Movement : MonoBehaviour
     private float rotationStrength = 100f;
 
     [SerializeField]
-    private AudioClip mainEngine;
+    private AudioClip mainEngineSFX;
+
 
     // Another convention is to call the variable "rb" for "rigidbody"
     private Rigidbody rb;
     AudioSource audioSource;
 
     [SerializeField]
-    ParticleSystem thrustParticles;
+    ParticleSystem mainEngineParticles;
+    [SerializeField]
+    ParticleSystem leftThrusterParticles;
+    [SerializeField]
+    ParticleSystem rightThrusterParticles;
+
 
     private void Start()
     {
@@ -48,19 +54,30 @@ public class Movement : MonoBehaviour
     {
         if (thrust.IsPressed())
         {
-
-            // Add a force to the rigidbody in the upward direction
-            rb.AddRelativeForce(Vector3.up * thrustStrength * Time.fixedDeltaTime);
-            if (!audioSource.isPlaying)
-            {
-                audioSource.PlayOneShot(mainEngine);
-                thrustParticles.Play();
-            }
+            StartThrusting();
         }
         else
         {
-            audioSource.Stop();
-            thrustParticles.Stop();
+            StopThrusting();
+        }
+    }
+
+    private void StopThrusting()
+    {
+        audioSource.Stop();
+        mainEngineParticles.Stop();
+    }
+
+    private void StartThrusting()
+    {
+        rb.AddRelativeForce(Vector3.up * thrustStrength * Time.fixedDeltaTime);
+        if (!audioSource.isPlaying)
+        {
+            audioSource.PlayOneShot(mainEngineSFX);
+        }
+        if (!mainEngineParticles.isPlaying)
+        {
+            mainEngineParticles.Play();
         }
     }
 
@@ -69,17 +86,41 @@ public class Movement : MonoBehaviour
         float rotationInput = rotation.ReadValue<float>();
         if (rotationInput < 0)
         {
-            ApplyRotation(rotationStrength);
+            RotateLeft();
         }
         else if (rotationInput > 0)
         {
-            ApplyRotation(-rotationStrength);
+            RotateRight();
         }
         else
         {
-            // No rotation input, do nothing
+            StopRotation();
         }
 
+    }
+
+    private void StopRotation()
+    {
+        leftThrusterParticles.Stop();
+        rightThrusterParticles.Stop();
+    }
+
+    private void RotateRight()
+    {
+        ApplyRotation(-rotationStrength);
+        if (!rightThrusterParticles.isPlaying)
+        {
+            rightThrusterParticles.Play();
+        }
+    }
+
+    private void RotateLeft()
+    {
+        ApplyRotation(rotationStrength);
+        if (!leftThrusterParticles.isPlaying)
+        {
+            leftThrusterParticles.Play();
+        }
     }
 
     private void ApplyRotation(float rotationThisFrame)

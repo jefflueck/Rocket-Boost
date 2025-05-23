@@ -25,14 +25,37 @@ public class CollisionHandler : MonoBehaviour
     AudioSource audioSource;
     [SerializeField]
     private bool isControllable = true;
+    [SerializeField]
+    private bool isCollidable = true;
 
     private void Start()
     {
         audioSource = GetComponent<AudioSource>();
     }
+
+    private void Update()
+    {
+        RespondToDebugKeys();
+    }
+
+    private void RespondToDebugKeys()
+    {
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            Debug.Log("L key pressed");
+            LoadNextScene();
+        }
+        else if (Input.GetKeyDown(KeyCode.C))
+        {
+            Debug.Log("C key pressed");
+            isCollidable = !isCollidable;
+        }
+
+    }
+
     void OnCollisionEnter(Collision collision)
     {
-        if (!isControllable) { return; }
+        if (!isControllable || !isCollidable) { return; }
 
         switch (collision.gameObject.tag)
         {
